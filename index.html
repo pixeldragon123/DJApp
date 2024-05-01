@@ -1,0 +1,46 @@
+<html>
+    <head>
+        <title>DJ</title>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.js"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/ml5@0.7.0/dist/ml5.min.js"></script>
+        <link href="style.css" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/p5@1.0.0/lib/addons/p5.sound.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/addons/p5.sound.min.js"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap" rel="stylesheet"></head>
+    </head>
+    <body background="mqdefault.jpg">
+        <center>
+            <h3 class="btn btn-primary" id="title">
+                DJ with air
+                <br>
+            <label id="label">NOTE - use ur left hand for speed and right hand for volume</label>
+            </h3>
+            <br><br>
+            <div id="speeddiv">
+                <img src="disk.gif" >
+                <br>
+                <h3 class="btn btn-warning" id="speedh3">Speed :</h3>
+            </div>
+            <div id="volumediv">
+                <img src="disk.gif" >
+                <br>
+                <h3 class="btn btn-warning" id="volumeh3">Volume :</h3>
+            </div>
+            <br><br>
+            <button class="btn btn-success" id="play" onclick="play()">Play</button>
+            <button class="btn btn-success" id="pause" onclick="pause()">Pause</button>
+            <select id="dropdown" class="btn btn-primary">
+             <option>BAIXO</option>
+             <option>ultra</option>
+             <option>YUM</option>
+            </select>
+            
+        </center>
+    </body>
+    <script src="main.js"></script>
+</html>

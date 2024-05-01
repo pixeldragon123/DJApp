@@ -1,0 +1,34 @@
+
+@font-face {
+    font-family: myFirstFont;
+    src: url(Fortnite.ttf);
+  }
+
+#title{
+  margin: 0px;
+  font-size: 20px;
+ width: 60%; 
+font-family: myFirstFont;
+
+ 
+}
+#label{
+  font-size: 15px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+#speeddiv{
+  float:left ;
+}
+img{
+  width: 200px;
+  height: 200px; 
+}
+#volumediv{
+  float: right;
+}
+canvas{
+  background-color: beige;
+  box-shadow: 5px 5px 5px grey;
+  margin-top: 70px;
+  border-radius: 20px;
+}
