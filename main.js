@@ -29,14 +29,20 @@ function draw(){
     image(video, 0, 0, 600, 500);
     fill("yellow");
     stroke("yellow");
-    circle(lwx, lwy , 20);
-    circle(rwx, rwy , 20);
+    if(scoreLeftWrist > 0.2){
+        circle(lwx,lwy,20);
+        InNumberlwy = Number(lwy);
+        remove_decimals = floor(InNumberlwy);
+        volume = remove_decimals/500;
+        document.getElementById("volume").innerHTML = "Volume = " + volume;
+        song.setVolume(volume);
+    }
+    
     
 
 }
 
 function play(){
-    song1.setVolume(0.5);
     song1.rate(1);
     song1.play();
 
@@ -49,6 +55,8 @@ function showResult(results)
 {
     if(results.length > 0){
         console.log(results);
+        scoreLeftWrist = results[0].pose.keypoints[9].score;
+        console.log("scoreLeftWrist = " + scoreLeftWrist);
         lwx = results[0].pose.leftWrist.x;
         lwy = results[0].pose.leftWrist.y;
         console.log("lwx = " + lwx + "lwy = " + lwy)
